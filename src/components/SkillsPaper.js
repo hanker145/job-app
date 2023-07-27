@@ -18,7 +18,7 @@ function SkillsPaper({ skills }) {
         p: 0.5,
         m: 0,
         boxShadow: 0
-        // backgroundColor: theme => theme.palette.primary.light
+
       }}
       component="ul"
     >

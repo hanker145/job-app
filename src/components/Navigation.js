@@ -77,7 +77,6 @@ function Navigation() {
     <Box>
       <AppBar
         position="static"
-        // sx={{ backgroundColor: theme => theme.palette.primary.light }}
       >
         <Toolbar>
           <Typography

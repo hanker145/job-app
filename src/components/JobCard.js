@@ -19,22 +19,12 @@ const CardStyle = styled(Card)(({ theme }) => ({
   minWidth: "270px",
   height: "320px",
   margin: "auto"
-  // backgroundColor: theme.palette.primary.light
 }));
 
 function JobCard({ description, skills, id, title }) {
   const auth = useContext(AuthContext);
   const navigate = useNavigate();
   let location = useLocation();
-
-  // const handleClick = () => {
-  //   console.log(auth);
-  //   if (auth.user) {
-  //     navigate(`/job/${id}`, { state: { backgroundLocation: location } });
-  //   } else {
-  //     navigate("/login", { state: { backgroundLocation: location } });
-  //   }
-  // };
 
   return (
     <CardStyle ariant="outlined">
@@ -49,7 +39,6 @@ function JobCard({ description, skills, id, title }) {
           <Typography
             variant="subtitle1"
             component="div"
-            // sx={{ color: theme => theme.palette.common.white }}
           >
             {title}
           </Typography>
@@ -60,10 +49,9 @@ function JobCard({ description, skills, id, title }) {
         <Button
           variant="contained"
           component={Link}
-          // onClick={handleClick}
           to={`/job/${id}`}
           state={{ backgroundLocation: location }}
-          sx={{ width: "130px", backgroundColor: "green" }}
+          sx={{ width: "130px", backgroundColor: "orange" }}
         >
           Learn More
         </Button>

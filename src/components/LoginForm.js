@@ -38,7 +38,7 @@ const styles = {
 }
 
 function LoginForm({ callback }) {
-  const [username] = useState('FakeUserName')
+  const [username] = useState('YourUserName')
   const [password] = useState('12345')
   const auth = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(false)
