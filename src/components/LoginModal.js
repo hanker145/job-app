@@ -34,6 +34,4 @@ function LoginModal() {
     </Modal>
   );
 }
-
-// Export the LoginModal component as the default export of this module
 export default LoginModal;
