@@ -8,12 +8,9 @@ function Layout() {
   return (
     <Stack
       sx={{
-        minHeight: "100vh"
-        // backgroundColor: theme => theme.palette.primary.main
-      }}
+        minHeight: "100vh"      }}
     >
       <Navigation />
-      {/* Render the nested routes */}
       <Outlet />
       <Box sx={{ flexGrow: 1 }} />
     </Stack>
